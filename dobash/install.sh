@@ -1,5 +1,4 @@
-#!/usr/bin/env bash
-set -e
+
 
 mkdir -p ~/workspace
 cd ~/workspace
