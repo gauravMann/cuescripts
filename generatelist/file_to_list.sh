@@ -1,4 +1,7 @@
 #!/usr/bin/env bash
 set -e
 
-awk '{print "\x27",$0,"\x27"}' < $1 | tr '\n' ',' | tr -d "[:space:]"
+pbpaste > fl.txt
+awk '{print "\x27",$0,"\x27"}' < fl.txt | tr '\n' ',' | tr -d "[:space:]"
+rm fl.txt
+
